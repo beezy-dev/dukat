@@ -1,0 +1,9 @@
+apiVersion: dukat.k8s.io/v1alpha1
+kind: Voucher
+metadata:
+  name: example-voucher
+spec:
+  resourceCluster: local
+  resourceType: pods 
+  budgetType: schedulable
+  budgetValue: 5

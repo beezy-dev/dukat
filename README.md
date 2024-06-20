@@ -7,6 +7,9 @@ Dukat is an open source project providing a Kubernetes controller to enable a pr
     * cost value
     * time value 
     * quantifiable value (how many CPUs, storage, pods, namespaces, clusters, nodes, ...)
+    * idleing 
+    * capacity management threshold (80% warning and scaling down)
+    * instance type (like in AWS, the biggest schedulable instance is a m5.large)
 * controlling resources (3)
      * like a single Kubernetes object (storage, namespace, ...) 
      * like a set of Kubernetes objects grouped under a single or multiple namespace
@@ -19,4 +22,3 @@ Once the voucher has been ingested, the controller will gate the scaling and sch
 
 ![dukat](docs/images/dukat.drawio.png)
 
- 
